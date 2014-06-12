@@ -12,7 +12,7 @@ namespace Tritium{
 
 	double log_taylor(double x, int n_iter);
 
-	double absolute(const double& x);
+	double absolute(const double x);
 
 	template<typename T>
 	unsigned int n_digits(T x);
@@ -22,11 +22,11 @@ namespace Tritium{
 
 	double Gamma(double x);
 
-	double babylonian_sqrt(double& x, int n_iter=100);
+	double babylonian_sqrt(double x, int n_iter=100);
 
-	double digit_sqrt(double& x, int n_digits);
+	double digit_sqrt(double x, int n_digits);
 
-	double sqrt_from_exp(double& x, int n_iter);
+	double sqrt_from_exp(double x, int n_iter);
 
 	//only valid for 0<x<3. Best for x approx 1
 	double sqrt_2_var(double x);

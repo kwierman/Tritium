@@ -1,12 +1,13 @@
 #include "TriConstants.h"
+#include "TriQuantity.h"
 //#include "TriLogger.h"
+
+#include <iostream>
 
 using namespace Tritium;
 int main(int argc, char* argv[]){
-	
-		//TriLog(TriLogger::kFail)<<"Usage: ComputeTritium <path to configuration file>"<<endl;
-		//TriLog(TriLogger::kFail)<<"  No configuration file found"<<endl;
-		//return -1;
-
+	TriScalar scale = TriRate(0.0)*TriTime(0.0);
+	//TriScalar doesntWork = TriTime(0.0)*TriTime(0.0);
+	TriEnergy energy = TriMass(66.0)*TriLength(100.0)*TriLength(100.0)/TriTime(1.0)/TriTime(1.0);
 	return 0;
 }

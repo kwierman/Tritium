@@ -19,7 +19,8 @@ namespace TritiumDesign{
 
 	    template<class OtherDimensions>
 	    TriQuantity(const OtherDimensions& rhs ) :fValue(rhs.Value()){
-	    	TRITIUM_STATIC_ASSERT( (SameType< Dimensions , OtherDimensions >::value) , ERROR_QUANTITIES_NOT_EQUAL_DIMENSIONS );
+	    	TRITIUM_STATIC_ASSERT( (SameType< Dimensions , OtherDimensions >::value),
+	    							ERROR_QUANTITIES_NOT_EQUAL_DIMENSIONS() );
 	    }
 
 	    T Value() const { return fValue; }
@@ -44,7 +45,7 @@ namespace TritiumDesign{
 	}
 
 	//Multiplication
-	/*
+	
 	
 	template <class T, class D1, class D2>
 	TriQuantity< T, typename TriDimensionAdd<D1,D2>::Type >  operator*(TriQuantity<T,D1> x, TriQuantity<T,D2> y) {
@@ -58,8 +59,6 @@ namespace TritiumDesign{
     	typedef typename TritiumDesign::TriDimensionSubtract<D1,D2>::Type dim;
     	return TriQuantity<T,dim>( x.Value() * y.Value() );
 	}
-	*/
-	
 	
 
 }
@@ -67,13 +66,13 @@ namespace TritiumDesign{
 namespace Tritium{
 	//everything in double, since that's the limit that we're calculating to
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::scalar> TriScalar;
-	/*
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::mass> TriMass;
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::length> TriLength;
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::time> TriTime;
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::charge> TriCharge;
-	/*
+	
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::rate> TriRate;
+	typedef TritiumDesign::TriQuantity<double, TritiumDesign::velocity> TriVelocity;
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::temperature> TriTemperature;
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::intensity> TriIntensity;
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::angle> TriAngle;
@@ -82,7 +81,7 @@ namespace Tritium{
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::fermiDimension> TriFermiQuantity;
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::magneticFluxDensity> TriMagneticFluxDensity;
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::electricFluxDensity> TriElectricFluxDensity;
-	*/
+	
 }
 
 #endif //TriQuantity_h_

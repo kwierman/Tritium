@@ -35,7 +35,7 @@ namespace Tritium{
 		return value;
 	}
 
-	double absolute(const double& x){
+	double absolute(const double x){
 		if ( x < 0.) return x-2.0*x;
 		return x;
 	}
@@ -64,7 +64,7 @@ namespace Tritium{
 		return result;
 	}
 
-	double babylonian_sqrt(double& x, int n_iter){
+	double babylonian_sqrt(double x, int n_iter){
 		double x_0 = x/2.;
 		for(int i=0; i<n_iter; i++){
 			x_0 = (x_0+x/x_0)/2.;
@@ -72,7 +72,7 @@ namespace Tritium{
 		return x_0;
 	}
 
-	double digit_sqrt(double& x, int n_digits){
+	double digit_sqrt(double x, int n_digits){
 		double d,a=1;
 		if(!x) return 0.;
 		if (n_digits < 1 || (x < 0 && !(n_digits&1))) return 0./0.; /* NaN */
@@ -85,7 +85,7 @@ namespace Tritium{
 		return a;
 	}
 
-	double sqrt_from_exp(double& x, int n_iter){
+	double sqrt_from_exp(double x, int n_iter){
 		return exponent_taylor(0.5*log_taylor(x, n_iter) ,n_iter);
 	}
 
