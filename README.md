@@ -2,3 +2,5 @@ TritiumMC
 =========
 
 A tritium monte carlo engine
+
+Note: THIS WILL NOT COMPILE UNTIL THE DIMENSIONAL ANALYSIS TOOLS ARE FINISHED BEING WRITTEN

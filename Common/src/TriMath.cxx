@@ -14,7 +14,7 @@ namespace Tritium{
 	int factorial(int x){
 		int y=1.0;
 		while(x>0){
-			y*(--x)
+			y*(--x);
 		}
 		return y;
 	}
@@ -30,7 +30,7 @@ namespace Tritium{
 	double log_taylor(double x, int n_iter){
 		double value=0;
 		for(int i=0; i<n_iter; i++){
-			value+=(Power<double>(-1.0, (i+1))/double(i) )*(Power<double>((x-1),i);
+			value+=(Power<double>(-1.0, (i+1))/double(i) )*(Power<double>(x-1,i ) );
 		}
 		return value;
 	}
@@ -80,8 +80,9 @@ namespace Tritium{
 			d=(x/Power<double>(a,n_digits-1)-a )/n_digits;
 			a+=d;
 		}
-		while(absolute(d)>=absolute(a) *DBL_EPSILON*10.0  )
-			return a;
+		while(absolute(d)>=absolute(a) *2.2204460492503131e-15  );//not exactly DBL_EPSILON
+
+		return a;
 	}
 
 	double sqrt_from_exp(double& x, int n_iter){

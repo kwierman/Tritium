@@ -11,11 +11,6 @@ struct CompileTimeChecker {
 template<> 
 struct CompileTimeChecker<false> { };
 
-#define STATIC_CHECK(expr, msg) \
-{\
-class ERROR_##msg {}; \
-(void)sizeof(CompileTimeChecker<(expr) != 0>((ERROR_##msg())));\
-}
-
+#define TRITIUM_STATIC_ASSERT(expr, msg) {class ERROR_##msg {}; (void)sizeof(CompileTimeChecker<(expr) != 0>((ERROR_##msg())));}
 
 #endif //TriAssert_h_

@@ -7,7 +7,7 @@
 #ifndef TriConstants_h_
 #define TriConstants_h_ 1
 
-#include "TriQuantity"
+#include "TriQuantity.h"
 #include "TriMath.h"
 
 namespace Tritium

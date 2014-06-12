@@ -27,7 +27,7 @@ link_directories(${ROOT_LIBRARY_DIR})
 #include(${VTK_USE_FILE})
 #----------------------------------------------------------------------------
 # Locate sources and headers for this project
-set(SOURCE_FOLDERS IO Common Simulation Elements )
+set(SOURCE_FOLDERS Design Common )
 set(SOURCE_HEADERS)
 set(SOURCE_FILES)
 #set(LIBRARY_LIST)
@@ -51,7 +51,8 @@ target_link_libraries(Tritium ${ROOT_LIBRARIES} ${Boost_LIBRARIES})
 install(TARGETS Tritium DESTINATION lib)
 #----------------------------------------------------------------------------
 # Locate Executables, and link against all libraries
-file(GLOB applications ${PROJECT_SOURCE_DIR}/Applications/*.cxx)
+#file(GLOB applications ${PROJECT_SOURCE_DIR}/Applications/*.cxx)
+file(GLOB applications ${PROJECT_SOURCE_DIR}/Applications/Tritium*.cxx)
 foreach(_app ${applications})
 	get_filename_component (name_without_extension ${_app} NAME_WE)
 	add_executable(${name_without_extension} ${_app} )#${sources} ${headers})
