@@ -48,7 +48,7 @@ namespace TritiumDesign{
 										T19,
                              			T20	>::Type TailResult;
     public:
-        typedef Typelist<T01, TailResult> Type;
+        typedef TriTypelist<T1, TailResult> Type;
     };
         
     template<>

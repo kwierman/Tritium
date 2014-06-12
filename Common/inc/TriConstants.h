@@ -14,7 +14,9 @@ namespace Tritium
 {
 	const static TriScalar 				Pi 					= TriScalar(3.1415926535897932);
 	const static TriCharge 				FundamentalCharge 	= TriCharge(1.60217646e-19);  //Coulombs
+	/*
 	const static TriMass 				ElectronMass 		= TriMass(9.10938215e-31); // kg
+	/*
 	const static TriEnergy 				ElectronMasseV 		= TriEnergy(510998.910);//eV
 	const static TriAction 				H 					= TriAction(6.62606896e-34); // J*s Planck's constants
 	const static TriVelocity 			C 					= TriVelocity(299792458); // m/s
@@ -37,5 +39,6 @@ namespace Tritium
 	const static TriTime 				TritiumLifetime 	= TriTime(TritiumHalfLife.Value() / log_taylor(2.0,10) ); //lifetime in seconds
 	const static TriMass 				TritiumMass 		= TriScalar(3.01604927767)*AMU;
 	const static TriMass 				Helium3Mass 		= TriScalar(3.01602931914)*AMU;
+	*/
 }
 #endif /* TriConstants_h_ */

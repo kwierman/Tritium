@@ -8,10 +8,10 @@
 
 namespace TritiumDesign{
 
-    template <class T, class U>
+    template <class H, class T>
     struct TriTypelist{
-       typedef T Head;
-       typedef U Tail;
+       typedef H Head;
+       typedef T Tail;
     };        
 }   // namespace TritiumDesign
 
