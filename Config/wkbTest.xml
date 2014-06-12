@@ -1,0 +1,26 @@
+<TritiumConfig name = "WKBFermiFunctionTest1" >
+	<set lowEnergy="0"/>
+	<set highEnergy="18575" />
+	<set nBins="1000" />
+
+	<element name="TriBetaKinematics">
+		<set endpoint="18575"/>
+		<set norm="1.e21" />
+	</element>
+
+	<element name="TriSimpleNeutrinoMass">
+		<set endpoint="18575"/>
+		<set neutrino_mass="0.34"/>
+	</element>
+
+	<element name="TriRelativisticFermiFunction">
+		<set Z="2"/>
+		<set V0="170.8"/>
+	</element>	
+
+	<element name="TriWKBApproximation">
+		<set Z="2"/>
+		<set type="0"/>
+	</element>
+
+</TritiumConfig>

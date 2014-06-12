@@ -1,0 +1,60 @@
+<TritiumConfig name = "NeutrinoModelTest" >
+	<set lowEnergy="18000"/>
+	<set highEnergy="19000" />
+	<set nBins="100000" />
+
+	<element name="TriBetaKinematics">
+		<set endpoint="18575"/>
+		<set norm="1.e21" />
+	</element>
+
+	<element name="TriFermiFunction">
+		<set Z="2"/>
+	</element>	
+
+	<element name="TriNeutrinoModel">
+		<set mass="100.00"/>
+		<set mass="10.00"/>
+		<set mass="1.0"/>
+		
+		<set endpoint="18575"/>
+
+		<set pmns="0.822" row="1" column="1" /><set pmns="0.547" row="1" cloumn="2" /><set pmns="-0.150" row="1" column="3"/>
+		<set pmns="-0.356" row="2" column="1" /><set pmns="0.704" row="2" cloumn="2" /><set pmns="0.614" row="2" column="3"/>
+		<set pmns="0.422" row="3" column="1" /><set pmns="-0.452" row="3" cloumn="2" /><set pmns="0.774" row="3" column="3"/>
+
+	</element>
+
+</TritiumConfig>
+
+
+
+<TritiumConfig name = "RealModelTest" >
+	<set lowEnergy="18574.99"/>
+	<set highEnergy="18575" />
+	<set nBins="100000" />
+
+	<element name="TriBetaKinematics">
+		<set endpoint="18575"/>
+		<set norm="1.e21" />
+	</element>
+
+	<element name="TriFermiFunction">
+		<set Z="2"/>
+	</element>	
+
+	<element name="TriNeutrinoModel">
+		<set mass="0.28319"/>
+		<set mass="0.0481"/>
+		<set mass="0.00871"/>
+		
+		<set endpoint="18575"/>
+		<set inverted="1.0"/>
+
+		<set pmns="0.822" row="1" column="1" /><set pmns="0.547" row="1" cloumn="2" /><set pmns="-0.150" row="1" column="3"/>
+		<set pmns="-0.356" row="2" column="1" /><set pmns="0.704" row="2" cloumn="2" /><set pmns="0.614" row="2" column="3"/>
+		<set pmns="0.442" row="3" column="1" /><set pmns="-0.452" row="3" cloumn="2" /><set pmns="0.774" row="3" column="3"/>
+
+	</element>
+
+</TritiumConfig>

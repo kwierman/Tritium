@@ -1,0 +1,13 @@
+<TritiumConfig name = "DecayWithGaussianAtomicTail" >
+	<set lowEnergy="0.0"/>
+	<set highEnergy="19000" />
+	<set nBins="10000" />
+	<decay name="TriBetaDecay">
+		<set endpoint="16100"/>
+		<set neutrinoMass="0.0001"/>
+		<set norm="1.e35"/>
+	</decay>
+	<decay name="TriAtomicTailDist">
+		<set distributionType="0.0"/>
+	</decay>
+</TritiumConfig>

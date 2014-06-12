@@ -1,0 +1,12 @@
+<TritiumConfig name = "DiscreteExcitations" >
+	<set lowEnergy="0.0"/>
+	<set highEnergy="19000" />
+	<set nBins="100000" />
+	<decay name="TriBetaDecay">
+		<set endpoint="18575"/>
+		<set neutrinoMass="0.34"/>
+		<set norm="1.e35"/>
+	</decay>
+
+
+</TritiumConfig>

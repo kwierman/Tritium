@@ -1,0 +1,96 @@
+<TritiumConfig name = "FermiFunctionTest" >
+	<set lowEnergy="0"/>
+	<set highEnergy="19000" />
+	<set nBins="100000" />
+
+	<element name="TriBetaKinematics">
+		<set endpoint="18575"/>
+		<set norm="1.e21" />
+	</element>
+
+	<element name="TriFermiFunction">
+		<set Z="2"/>
+	</element>	
+
+	<element name="TriSimpleNeutrinoMass">
+		<set endpoint="18575"/>
+		<set neutrino_mass="0.34"/>
+	</element>
+
+</TritiumConfig>
+
+<TritiumConfig name = "RelativisticFermiFunctionTest" >
+	<set lowEnergy="0"/>
+	<set highEnergy="18575" />
+	<set nBins="1000" />
+
+	<element name="TriBetaKinematics">
+		<set endpoint="18575"/>
+		<set norm="1.e21" />
+	</element>
+
+	<element name="TriSimpleNeutrinoMass">
+		<set endpoint="18575"/>
+		<set neutrino_mass="0.34"/>
+	</element>
+
+	<element name="TriRelativisticFermiFunction">
+		<set Z="2"/>
+		<set V0="0.0"/>
+	</element>	
+
+</TritiumConfig>
+
+<TritiumConfig name = "WKBFermiFunctionTest1" >
+	<set lowEnergy="500"/>
+	<set highEnergy="18575" />
+	<set nBins="1000" />
+
+	<element name="TriBetaKinematics">
+		<set endpoint="18575"/>
+		<set norm="1.e21" />
+	</element>
+
+	<element name="TriSimpleNeutrinoMass">
+		<set endpoint="18575"/>
+		<set neutrino_mass="0.34"/>
+	</element>
+
+	<element name="TriRelativisticFermiFunction">
+		<set Z="2"/>
+		<set V0="99.4242"/>
+	</element>	
+
+	<element name="TriWKBApproximation">
+		<set Z="2"/>
+		<set type="0"/>
+	</element>
+
+</TritiumConfig>
+
+<TritiumConfig name = "WKBFermiFunctionTest2" >
+	<set lowEnergy="500"/>
+	<set highEnergy="18575" />
+	<set nBins="1000" />
+
+	<element name="TriBetaKinematics">
+		<set endpoint="18575"/>
+		<set norm="1.e21" />
+	</element>
+
+	<element name="TriSimpleNeutrinoMass">
+		<set endpoint="18575"/>
+		<set neutrino_mass="0.34"/>
+	</element>
+
+	<element name="TriRelativisticFermiFunction">
+		<set Z="2"/>
+		<set V0="99.4242"/>
+	</element>	
+
+	<element name="TriWKBApproximation">
+		<set Z="2"/>
+		<set type="1"/>
+	</element>
+
+</TritiumConfig>

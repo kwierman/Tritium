@@ -1,0 +1,203 @@
+<TritiumConfig name = "IntegrationTest" >
+	<set lowEnergy="200"/>
+	<set highEnergy="18575" />
+	<set nBins="1000" />
+
+	<element name="TriBetaKinematics">
+		<set endpoint="18575"/>
+		<set norm="1.e21" />
+	</element>
+
+	<element name="TriNeutrinoModel">
+		<set mass="0.28319"/>
+		<set mass="0.0481"/>
+		<set mass="0.00871"/>
+		
+		<set endpoint="18575"/>
+		<set inverted="1.0"/>
+
+		<set pmns="0.822" row="1" column="1" /><set pmns="0.547" row="1" cloumn="2" /><set pmns="-0.150" row="1" column="3"/>
+		<set pmns="-0.356" row="2" column="1" /><set pmns="0.704" row="2" cloumn="2" /><set pmns="0.614" row="2" column="3"/>
+		<set pmns="0.442" row="3" column="1" /><set pmns="-0.452" row="3" cloumn="2" /><set pmns="0.774" row="3" column="3"/>
+
+	</element>
+
+	<element name="TriRelativisticFermiFunction">
+		<set Z="2"/>
+		<set V0="99.4242"/>
+	</element>	
+
+	<element name="TriWKBApproximation">
+		<set Z="2"/>
+		<set type="1"/>
+	</element>
+
+	<element name="TriDiscreteExcitation">
+		<set norm="0.97877"/>
+		<set lowEnergy="0.053"/>
+		<set highEnergy="240"/>
+
+		<set energy="0.053"/><set prob="0.0069"/>
+		<set energy="0.124"/><set prob="0.0046"/>
+		<set energy="0.247"/><set prob="0.0233"/>
+		<set energy="0.351"/><set prob="0.0553"/>
+		<set energy="0.442"/><set prob="0.0457"/>
+		<set energy="0.556"/><set prob="0.2033"/>
+		<set energy="0.665"/><set prob="0.1649"/>
+		<set energy="0.759"/><set prob="0.3877"/>
+		<set energy="0.850"/><set prob="0.3808"/>
+		<set energy="0.937"/><set prob="0.6809"/>
+		<set energy="1.048"/><set prob="1.1214"/>
+		<set energy="1.143"/><set prob="1.0112"/>
+		<set energy="1.249"/><set prob="2.4406"/>
+		<set energy="1.359"/><set prob="3.2337"/>
+		<set energy="1.451"/><set prob="4.0864"/>
+		<set energy="1.552"/><set prob="6.8745"/>
+		<set energy="1.657"/><set prob="6.6279"/>
+		<set energy="1.745"/><set prob="5.1412"/>
+		<set energy="1.834"/><set prob="6.5561"/>
+		<set energy="1.940"/><set prob="5.4588"/>
+		<set energy="2.044"/><set prob="3.7231"/>
+		<set energy="2.144"/><set prob="2.5473"/>
+		<set energy="2.244"/><set prob="1.6959"/>
+		<set energy="2.344"/><set prob="1.1369"/>
+		<set energy="2.510"/><set prob="1.6947"/>
+		<set energy="2.762"/><set prob="1.0094"/>
+		<set energy="3.009"/><set prob="0.5732"/>
+		<set energy="3.257"/><set prob="0.2806"/>
+		<set energy="3.507"/><set prob="0.1316"/>
+		<set energy="3.757"/><set prob="0.0623"/>
+		<set energy="4.083"/><set prob="0.0420"/>
+		<set energy="4.579"/><set prob="0.0080"/>
+		<set energy="5.132"/><set prob="0.0015"/>
+		<set energy="5.647"/><set prob="0.0000"/>
+		<set energy="18.500"/><set prob="0.0000"/>
+		<set energy="19.500"/><set prob="0.0000"/>
+		<set energy="20.696"/><set prob="0.0012"/>
+		<set energy="21.658"/><set prob="0.0113"/>
+		<set energy="22.627"/><set prob="0.0656"/>
+		<set energy="23.598"/><set prob="0.2567"/>
+		<set energy="24.573"/><set prob="0.7149"/>
+		<set energy="25.550"/><set prob="1.4804"/>
+		<set energy="26.529"/><set prob="2.3583"/>
+		<set energy="27.510"/><set prob="2.9715"/>
+		<set energy="28.493"/><set prob="3.0307"/>
+		<set energy="29.478"/><set prob="2.5527"/>
+		<set energy="30.464"/><set prob="1.8080"/>
+		<set energy="31.455"/><set prob="1.1070"/>
+		<set energy="32.490"/><set prob="0.7377"/>
+		<set energy="33.557"/><set prob="1.0637"/>
+		<set energy="34.534"/><set prob="1.9095"/>
+		<set energy="35.492"/><set prob="2.2178"/>
+		<set energy="36.459"/><set prob="1.6434"/>
+		<set energy="37.445"/><set prob="0.9037"/>
+		<set energy="38.463"/><set prob="0.4989"/>
+		<set energy="39.499"/><set prob="0.3978"/>
+		<set energy="40.506"/><set prob="0.4124"/>
+		<set energy="41.498"/><set prob="0.4152"/>
+		<set energy="42.498"/><set prob="0.3925"/>
+		<set energy="43.504"/><set prob="0.3457"/>
+		<set energy="44.511"/><set prob="0.3186"/>
+		<set energy="45.494"/><set prob="0.2701"/>
+		<set energy="46.481"/><set prob="0.2713"/>
+		<set energy="47.483"/><set prob="0.2481"/>
+		<set energy="48.513"/><set prob="0.2412"/>
+		<set energy="49.498"/><set prob="0.1907"/>
+		<set energy="50.462"/><set prob="0.1938"/>
+		<set energy="51.501"/><set prob="0.1760"/>
+		<set energy="52.496"/><set prob="0.1575"/>
+		<set energy="53.491"/><set prob="0.1541"/>
+		<set energy="54.502"/><set prob="0.1485"/>
+		<set energy="55.508"/><set prob="0.1557"/>
+		<set energy="56.526"/><set prob="0.1895"/>
+		<set energy="57.518"/><set prob="0.2427"/>
+		<set energy="58.529"/><set prob="0.3357"/>
+		<set energy="59.518"/><set prob="0.4095"/>
+		<set energy="60.505"/><set prob="0.4714"/>
+		<set energy="61.505"/><set prob="0.5034"/>
+		<set energy="62.501"/><set prob="0.5152"/>
+		<set energy="63.503"/><set prob="0.5442"/>
+		<set energy="64.512"/><set prob="0.5859"/>
+		<set energy="65.504"/><set prob="0.6617"/>
+		<set energy="66.510"/><set prob="0.7094"/>
+		<set energy="67.501"/><set prob="0.7404"/>
+		<set energy="68.492"/><set prob="0.7164"/>
+		<set energy="69.489"/><set prob="0.6563"/>
+		<set energy="70.486"/><set prob="0.5620"/>
+		<set energy="71.473"/><set prob="0.4691"/>
+		<set energy="72.478"/><set prob="0.3680"/>
+		<set energy="73.486"/><set prob="0.3049"/>
+		<set energy="74.443"/><set prob="0.2210"/>
+		<set energy="75.446"/><set prob="0.1928"/>
+		<set energy="76.465"/><set prob="0.1761"/>
+		<set energy="77.430"/><set prob="0.1530"/>
+		<set energy="78.512"/><set prob="0.1215"/>
+		<set energy="79.464"/><set prob="0.1390"/>
+		<set energy="80.504"/><set prob="0.1216"/>
+		<set energy="81.510"/><set prob="0.1422"/>
+		<set energy="82.523"/><set prob="0.1384"/>
+		<set energy="83.505"/><set prob="0.1368"/>
+		<set energy="84.499"/><set prob="0.1316"/>
+		<set energy="85.490"/><set prob="0.1153"/>
+		<set energy="86.491"/><set prob="0.1076"/>
+		<set energy="87.498"/><set prob="0.0921"/>
+		<set energy="88.498"/><set prob="0.0757"/>
+		<set energy="89.495"/><set prob="0.0696"/>
+		<set energy="90.967"/><set prob="0.1236"/>
+		<set energy="92.983"/><set prob="0.1080"/>
+		<set energy="94.982"/><set prob="0.0966"/>
+		<set energy="96.982"/><set prob="0.0864"/>
+		<set energy="98.981"/><set prob="0.0776"/>
+		<set energy="100.981"/><set prob="0.0703"/>
+		<set energy="102.983"/><set prob="0.0636"/> 
+		<set energy="104.984"/><set prob="0.0578"/>
+		<set energy="106.985"/><set prob="0.0528"/>
+		<set energy="108.986"/><set prob="0.0483"/>
+		<set energy="110.986"/><set prob="0.0444"/>
+		<set energy="112.987"/><set prob="0.0409"/>
+		<set energy="114.987"/><set prob="0.0378"/>
+		<set energy="116.987"/><set prob="0.0350"/>
+		<set energy="118.988"/><set prob="0.0325"/>
+		<set energy="120.988"/><set prob="0.0302"/>
+		<set energy="122.988"/><set prob="0.0282"/>
+		<set energy="124.989"/><set prob="0.0263"/>
+		<set energy="126.989"/><set prob="0.0246"/>
+		<set energy="128.989"/><set prob="0.0230"/>
+		<set energy="130.989"/><set prob="0.0216"/>
+		<set energy="132.990"/><set prob="0.0203"/>
+		<set energy="134.990"/><set prob="0.0191"/>
+		<set energy="136.990"/><set prob="0.0180"/>
+		<set energy="138.990"/><set prob="0.0169"/>
+		<set energy="141.962"/><set prob="0.0311"/>
+		<set energy="145.964"/><set prob="0.0278"/>
+		<set energy="149.965"/><set prob="0.0250"/>
+		<set energy="153.966"/><set prob="0.0225"/>
+		<set energy="157.967"/><set prob="0.0204"/>
+		<set energy="161.969"/><set prob="0.0185"/>
+		<set energy="165.970"/><set prob="0.0169"/>
+		<set energy="169.971"/><set prob="0.0154"/>
+		<set energy="173.972"/><set prob="0.0141"/>
+		<set energy="177.973"/><set prob="0.0130"/>
+		<set energy="181.973"/><set prob="0.0120"/>
+		<set energy="185.974"/><set prob="0.0111"/>
+		<set energy="189.975"/><set prob="0.0103"/>
+		<set energy="193.976"/><set prob="0.0095"/>
+		<set energy="197.976"/><set prob="0.0089"/>
+		<set energy="201.977"/><set prob="0.0083"/>
+		<set energy="205.977"/><set prob="0.0077"/>
+		<set energy="209.978"/><set prob="0.0072"/>
+		<set energy="213.979"/><set prob="0.0068"/>
+		<set energy="217.979"/><set prob="0.0064"/>
+		<set energy="221.979"/><set prob="0.0060"/>
+		<set energy="225.980"/><set prob="0.0056"/>
+		<set energy="229.980"/><set prob="0.0053"/>
+		<set energy="233.981"/><set prob="0.0050"/>
+		<set energy="237.981"/><set prob="0.0047"/>
+	</element>
+
+	<element name="TriSaenzJonsellTail">
+	</element>
+
+	<element name="TriIntegrator"/>
+	<element name="TriDifferentiator"/>
+</TritiumConfig>

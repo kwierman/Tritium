@@ -1,0 +1,21 @@
+<TritiumConfig name = "SimpleBetaDecay" >
+	<set lowEnergy="0.0"/>
+	<set highEnergy="19000" />
+	<set nBins="1000" />
+
+	
+	<element name="TriBetaKinematics">
+		<set endpoint="18575"/>
+		<set norm="1.e35"/>
+	</element>
+
+	<element name="TriFermiFunction">
+		<set Z="2"/>
+	</element>	
+
+	<element name="TriSimpleNeutrinoMass">
+		<set endpoint="18575"/>
+		<set neutrino_mass="0.34"/>
+	</element>
+
+</TritiumConfig>
