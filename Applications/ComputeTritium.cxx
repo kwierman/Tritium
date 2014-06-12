@@ -2,10 +2,6 @@
 #include "TriUtilities.h"
 #include "TriLogger.h"
 
-#include <sysexits.h>
-#include <signal.h>
-#include <iostream>
-
 using namespace Tritium;
 int main(int argc, char* argv[]){
 	if(argc <2){
