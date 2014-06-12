@@ -22,6 +22,10 @@ namespace TritiumDesign{
 	    }
 
 	    T Value() const { return fValue; }
+
+	    //NOTE THAT THIS IS ONLY NECESSARY FOR THE ROOT OUTPUT. DECOUPLING ROOT
+	    #pragma mark ROOT_COUPLED
+	    T* ValueByPointer() { return &fValue; }
 	 private:
 	    T fValue;
 	};
@@ -40,6 +44,18 @@ namespace TritiumDesign{
 
 	//Multiplication
 
+	template <class T, class D1, class D2>
+	TriQuantity< T, typename TriDimensionAdd<D1,D2>::type> operator*(TriQuantity<T,D1> x, TriQuantity<T,D2> y) {
+    	typedef typename TriDimensionAdd<D1,D2>::Type dim;
+    	return TriQuantity<T,dim>( x.Value() * y.Value() );
+	}
+
+	//Division
+	template <class T, class D1, class D2>
+	TriQuantity< T, typename TriDimensionSubtract<D1,D2>::type> operator/(TriQuantity<T,D1> x, TriQuantity<T,D2> y) {
+    	typedef typename TriDimensionSubtract<D1,D2>::Type dim;
+    	return TriQuantity<T,dim>( x.Value() * y.Value() );
+	}
 
 }
 

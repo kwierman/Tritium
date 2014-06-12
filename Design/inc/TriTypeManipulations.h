@@ -15,6 +15,18 @@ namespace TritiumDesign
     struct TypeType{
         typedef T OType;
     };
+
+    template <typename T, typename U>
+    struct SameType
+    {
+        enum { value = false };
+    };
+    
+    template <typename T>
+    struct SameType<T,T>
+    {
+        enum { value = true };
+    };
     
 }   // namespace TritiumDesign
 
