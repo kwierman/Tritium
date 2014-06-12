@@ -59,4 +59,22 @@ namespace TritiumDesign{
 
 }
 
+namespace Tritium{
+	//everything in double, since that's the limit that we're calculating to
+	typedef TriDesign::TriQuantity<double, TriDesign::scalar> TriScalar;
+	typedef TriDesign::TriQuantity<double, TriDesign::mass> TriMass;
+	typedef TriDesign::TriQuantity<double, TriDesign::length> TriLength;
+	typedef TriDesign::TriQuantity<double, TriDesign::time> TriTime;
+	typedef TriDesign::TriQuantity<double, TriDesign::rate> TriRate;
+	typedef TriDesign::TriQuantity<double, TriDesign::charge> TriCharge;
+	typedef TriDesign::TriQuantity<double, TriDesign::temperature> TriTemperature;
+	typedef TriDesign::TriQuantity<double, TriDesign::intensity> TriIntensity;
+	typedef TriDesign::TriQuantity<double, TriDesign::angle> TriAngle;
+	typedef TriDesign::TriQuantity<double, TriDesign::energy> TriEnergy;
+	typedef TriDesign::TriQuantity<double, TriDesign::action> TriAction;
+	typedef TriDesign::TriQuantity<double, TriDesign::fermiDimension> TriFermiQuantity;
+	typedef TriDesign::TriQuantity<double, TriDesign::magneticFluxDensity> TriMagneticFluxDensity;
+	typedef TriDesign::TriQuantity<double, TriDesign::electricFluxDensity> TriElectricFluxDensity;
+}
+
 #endif //TriQuantity_h_
