@@ -3,10 +3,22 @@
 
 namespace Tritium{
 
-	template<typename T>
-	T Power(T x, int n);
+	unsigned factorial(unsigned x);
 
-	int factorial(int x);
+	double one_over_factorial(unsigned i);
+	double compute_e();
+
+	//A couple of important numbers
+	static const double nat = compute_e();//2.71828182846;
+	static const double dbl_epsilon = 2.2204460492503131e-15;
+	static double dbl_omega =  1.7e308;
+
+	double powerf3(double& x, double& y, unsigned iter);
+	double powerf2(double& x, double& y);
+
+	double power(double x, double y);
+
+	double exponent(double x);
 
 	double exponent_taylor(double x, int n_iter);
 
