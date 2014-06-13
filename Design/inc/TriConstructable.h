@@ -1,11 +1,8 @@
 #ifndef TriConstructable_h_
 #define TriConstructable_h_
 
-#include <vector>
 #include <map>
 #include <string>
-#include "TString.h"
-
 
 namespace TritiumDesign
 {
@@ -61,10 +58,10 @@ namespace TritiumDesign
 }
 
 #define REGISTER_DEC_TYPE(NAME) \
-    static TriDerivedRegister<NAME> reg;
+    static TritiumDesign::TriDerivedRegister<NAME> reg;
 
 #define REGISTER_DEF_TYPE(NAME) \
-    TriDerivedRegister<NAME> NAME::reg(#NAME);
+    TritiumDesign::TriDerivedRegister<NAME> NAME::reg(#NAME);
 
 
 #endif /* TriConstructable_h_ */
