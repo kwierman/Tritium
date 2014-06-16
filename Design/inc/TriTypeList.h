@@ -14,7 +14,7 @@ namespace TritiumDesign{
        typedef T Tail;
     };        
 
-
+	/*
 	template <class TList, class T> 
 	struct IndexOf;
 
@@ -36,6 +36,7 @@ namespace TritiumDesign{
 	public:
 	    enum { value = (temp == -1 ? -1 : 1 + temp) };
 	};
+	*/
 
 }   // namespace TritiumDesign
 

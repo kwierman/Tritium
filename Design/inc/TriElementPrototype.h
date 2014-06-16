@@ -10,9 +10,7 @@
 
 namespace Tritium{
 
-
-
-	class TriElementProtoType : public TriConstructable{
+	class TriElementPrototype : public TriConstructable{
 		virtual ~TriElementPrototype(){}
 		virtual void Set(std::string key, std::string value)=0;
 	};

@@ -1,7 +1,7 @@
 #ifndef TriNode_h_
 #define TriNode_h_
 
-#include "TriProcessEvent.h"
+//#include "TriProcessEvent.h"
 
 namespace TritiumDesign{
 
@@ -16,6 +16,7 @@ namespace TritiumDesign{
 				delete fNext;
 			fNext = NULL;
 		}
+		//things to implement, insert after, insert last
 
 		template<class Event>
 		virtual void OnEvent(const Event& ev)=0;

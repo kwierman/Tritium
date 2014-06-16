@@ -11,7 +11,6 @@ namespace Tritium{
 		return y;
 	}
 
-
 	double one_over_factorial(unsigned i){
 		unsigned temp = factorial(i+1);
 		if(temp>32767*2)

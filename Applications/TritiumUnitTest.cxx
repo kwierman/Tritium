@@ -23,11 +23,12 @@ int main(int argc, char* argv[]){
 	std::cout<<sqrt_from_exp(2,1000)<<std::endl;
 	std::cout<<power(2.,0.5)<<std::endl;
 	
-	TriScalar scaler = TriRate(0.0)*TriTime(0.0);		//This works
+	TriScalar scaler 	= 	TriRate(1.0)	*	TriTime(1.0);		//This works
+	TriAction act 		=	TriEnergy(20.0)	*	TriTime(5.0);		//Also works
 	//TriScalar doesntWork = TriTime(0.0)*TriTime(0.0); //This doesn't work
-	
 
 	TriEnergy energy = TriMass(66.0)*TriLength(100.0)*TriLength(100.0)/TriTime(1.0)/TriTime(1.0);
+
 	std::cout<<"Math Check: "<<energy.Value()<<" == "<<(66.*100.*100.)<<" ?"<<std::endl;
 	std::cout<<"Gamow Teller Constant: "<<MGamowTeller.Value()<<std::endl;
 
