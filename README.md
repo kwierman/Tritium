@@ -23,7 +23,7 @@ This should not:
 TriScalar doesntWork = TriTime(0.0)*TriTime(0.0); //This doesn't work
 ```
 This produces the following compile-time error:
-```C++
+```python
 error: invalid use of incomplete type ‘struct CompileTimeError<0>’
              ERROR_QUANTITIES_NOT_EQUAL_DIMENSIONS() );
 ```
