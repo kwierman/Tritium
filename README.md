@@ -1,6 +1,6 @@
-TritiumMC
+Tritium
 =========
 
-A tritium monte carlo engine
+A tritium calculation engine
 
-Note: THIS WILL NOT COMPILE UNTIL THE DIMENSIONAL ANALYSIS TOOLS ARE FINISHED BEING WRITTEN
+Note: Still in code design. Engine does not build, only design components
