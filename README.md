@@ -7,3 +7,8 @@ A tritium calculation engine
 
 **_Note: Backwards compatibility will be broken on migration to Protium and Deuterium._**
 
+#Notes On Dimensional Analysis
+
+Tritium Implements a system of meaningful dimensional analysis.
+
+This supports conversion between dimensions using the `*` and `/` operators.
