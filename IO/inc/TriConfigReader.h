@@ -13,13 +13,14 @@
 #include "TriObject.h"
 #include "TriElementPrototype.h"
 #include "TriLogger.h"
+#include "TriThreads.h"
 
 namespace Tritium{
 
 	namespace xml =boost::property_tree::detail::rapidxml;
 	namespace fs = boost::filesystem;
 
-	class TriConfigReader{
+	class TriConfigReader : public LockByObject<TriConfigReader, Mutex>{
 
 		fs::path fPath;//!< for storing the path to the configuration file
 

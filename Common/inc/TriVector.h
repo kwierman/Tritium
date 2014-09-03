@@ -37,7 +37,7 @@ namespace Tritium{
   		}
 		TriVector& TriVector::operator-=(const TriVector& rhs) {
    			this->fX -= rhs->fX;
-			this->fY -= rhs->fY;
+			 this->fY -= rhs->fY;
 			this->fZ -= rhs->fZ; 		
     		return *this;
   		}

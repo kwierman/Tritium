@@ -11,12 +11,12 @@
 using namespace Tritium;
 int main(int argc, char* argv[]){
 
-	std::cout<<"Math Test?"				<<std::endl;
-	std::cout<<dbl_epsilon				<<std::endl;
-	std::cout<<std::setprecision(15)	<<nat<<std::endl;
-	std::cout<<power(3.0,2.0)			<<std::endl;
-	std::cout<<9-power(3.,2.)			<<std::endl;
-	std::cout<<factorial(3)				<<std::endl;
+	std::cout<<"Math Test."<<std::endl;
+	std::cout<<"Limit on Precision:\t"<<dbl_epsilon				<<std::endl;
+	std::cout<<"Natural Number Calculation:\t"<<std::setprecision(15)	<<nat<<std::endl;
+	std::cout<<"Power Calculation Test:\t(9):\t"<<power(3.0,2.0)			<<std::endl;
+	std::cout<<"  Error on Calculation Test:\t(0):\t"<<9.0-power(3.,2.)			<<std::endl;
+	std::cout<<"Factorial Test:\t(6):\t"<<factorial(3)				<<std::endl;
 	std::cout<<exponent_taylor(2,1000)	<<std::endl;
 	std::cout<<exponent(2)				<<std::endl;
 	std::cout<<log_taylor(2,10)			<<std::endl;

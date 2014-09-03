@@ -9,6 +9,8 @@
 #include <vector>
 #include <cstring>
 
+#include "TriThreads.h"
+
 
 namespace Tritium
 {
@@ -35,7 +37,7 @@ namespace Tritium
 		This static time class is meant to be a manager for output to the root file
 	*/
 
-	class TriRootOutput{
+	class TriRootOutput : public TritiumThreading::LockByObject<TriRootOutput, TritiumThreading::Mutex>{
 
 	private:
 	    TriRootOutput()

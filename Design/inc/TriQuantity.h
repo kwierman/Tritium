@@ -66,6 +66,7 @@ namespace TritiumDesign{
 //Bringing the quantities into the main namespace
 namespace Tritium{
 	//everything in double, since that's the limit that we're calculating to
+#ifdef TRITIUM_DEBUG
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::scalar> TriScalar;
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::mass> TriMass;
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::length> TriLength;
@@ -83,6 +84,25 @@ namespace Tritium{
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::fermiDimension> TriFermiQuantity;
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::magneticFluxDensity> TriMagneticFluxDensity;
 	typedef TritiumDesign::TriQuantity<double, TritiumDesign::electricFluxDensity> TriElectricFluxDensity;
+#else
+	typedef double TriScalar;
+	typedef double TriMass;
+	typedef double TriLength;
+	typedef double TriTime;
+	typedef double TriCharge;
+	typedef double TriTemperature;
+	typedef double TriIntensity;
+	typedef double TriAngle;
+
+	//Derived quantities (To be partially speciallized on metric change)
+	typedef double TriVelocity;
+	typedef double TriRate;
+	typedef double TriEnergy;
+	typedef double TriAction;
+	typedef double TriFermiQuantity;
+	typedef double TriMagneticFluxDensity;
+	typedef double TriElectricFluxDensity;	
+#endif
 }
 
 #endif //TriQuantity_h_

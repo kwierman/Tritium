@@ -27,7 +27,7 @@ link_directories(${ROOT_LIBRARY_DIR})
 #include(${VTK_USE_FILE})
 #----------------------------------------------------------------------------
 # Locate sources and headers for this project
-set(SOURCE_FOLDERS Design Common IO Nodes )
+set(SOURCE_FOLDERS Design Threads Common IO Nodes )
 set(SOURCE_HEADERS)
 set(SOURCE_FILES)
 #set(LIBRARY_LIST)
