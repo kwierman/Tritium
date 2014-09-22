@@ -4,12 +4,13 @@
 // Include standard headers
 #include <stdio.h>
 #include <stdlib.h>
+#include <string>
 
 // Include GLEW
 #include <GL/glew.h>
 
 // Include GLFW
-#include <glfw3.h>
+#include <GL/glfw3.h>
 
 // Include GLM
 #include <glm/glm.hpp>
@@ -21,10 +22,10 @@ namespace Tritium{
 			glm::GLFWwindow* fWindow;
 
 		public:
-			Window() throw(GraphicsException): fWindow(NULL) {
+			Window(const std::string& name="Tritium", const unsigned& width=1024, const unsigned& height = 768 ) throw(GraphicsException): fWindow(NULL) {
 				OpenGLManager::GetInstance().Init();
 
-				fWindow = glm::glfwCreateWindow(1024, 768, "Tritium", NULL, NULL);
+				fWindow = glm::glfwCreateWindow(width, hight, name, NULL, NULL);
 
 				if(!fWindow){
 					throw GraphicsException("Failed to open GLFW window");
