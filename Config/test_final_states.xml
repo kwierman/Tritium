@@ -65,6 +65,7 @@
 		<set Z="2"/>
 	</element>
 
+	<!-- This should be -->
 	<element name="TriDiscreteExcitation">
 		<set norm="0.97877"/>
 		<set lowEnergy="0.053"/>

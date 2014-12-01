@@ -62,7 +62,7 @@ add_subdirectory(Applications)
 #add_subdirectory(Include)
 #----------------------------------------------------------------------------
 #Add in Documentation
-#add_subdirectory(Documentation)
+add_subdirectory(Documentation)
 #----------------------------------------------------------------------------
 # uninstall target
 configure_file(
