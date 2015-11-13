@@ -28,6 +28,7 @@ if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
 endif()
 #----------------------------------------------------------------------------
 find_package(OpenGL REQUIRED)
+
 #----------------------------------------------------------------------------
 find_package(Protium REQUIRED)
 if (PROTIUM_FOUND)
